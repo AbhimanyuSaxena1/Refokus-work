@@ -1,9 +1,9 @@
 import React from "react";
 import { LuMoveRight } from "react-icons/lu";
 
-function Card({heading,heading2,width,para,button,hover}) {
+function Card({heading,heading2,width,para,button,hover,index}) {
   return (
-    <div className={`${width}  min-h-[28vw] flex flex-col justify-evenly hover:bg-violet-600  bg-zinc-800 rounded-xl p-5`}>
+    <div className={`w-full lg:${width}  min-h-[50vw] mb-5 lg:mb-none lg:max-h-[30vw] flex flex-col justify-evenly hover:bg-violet-600 ${index == true ? "bg-violet-600":"bg-zinc-800" }  lg:bg-zinc-800 rounded-xl p-5 lg:p-5`}>
       <div className="w-full flex flex-col justify-between h-full">
         <div id="top">
           <div className="w-full flex items-center justify-between">
@@ -12,10 +12,10 @@ function Card({heading,heading2,width,para,button,hover}) {
               <LuMoveRight />
             </span>
           </div>
-          <h2 className="text-4xl mt-6">{heading2}</h2>
+          <h2 className="text-2xl lg:text-4xl mt-6">{heading2}</h2>
         </div>
         {button && (<div id="bottom">
-          <h3 className="text-8xl  whitespace-nowrap font-semibold">
+          <h3 className="text-5xl mt-4 lg-mt-none lg:text-8xl  whitespace-nowrap font-semibold">
             Start a Project
           </h3>
           <button className="px-5 py-2 border-2 border-zinc-200 mt-5 rounded-full">

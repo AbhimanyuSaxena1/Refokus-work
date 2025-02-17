@@ -78,19 +78,20 @@ function Work() {
 
   return (
     <div className="w-full ">
-      <div className="max-w-screen-xl text-center mx-auto relative">
-        <h1 className="text-[33vw] tracking-tighter select-none font-regular leading-none">
+      <div className="max-w-screen-xl text-center mx-auto lg:relative">
+        <h1 className="text-[46vw] lg:text-[33vw] tracking-tight mt-6 lg:tracking-tighter select-none font-regular leading-none">
           work
         </h1>
 
-        <div className="absolute w-full h-full top-0">
+        <div className="absolute  w-full h-full top-0">
           {images.map((elem, index) =>
             elem.isActive ? (
               <img
                 key={index}
                 src={elem.url}
-                className="absolute -translate-x-[50%] -translate-y-[50%]  h-70 w-70"
-                style={{ top: elem.top, left: elem.left }}
+                className="work hidden lg:flex absolute  -translate-x-[50%] -translate-y-[50%]  h-30 w-30 lg:h-70 lg:w-70"
+                style={{ top: elem.top, left: elem.left,
+                 }}
               />
             ) : null
           )}

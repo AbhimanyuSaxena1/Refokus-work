@@ -30,7 +30,7 @@ function Stripes() {
       ];
     
   return (
-    <div className='w-full border-t-2 border-b-2 border-zinc-800   mt-15 flex'>
+    <div className='w-full border-t-2 border-b-2 border-zinc-800   mt-15 lg:flex'>
         {data.map((elem,index)=>{
             return <Strip key={index} index={index} url={elem.url} number={elem.number} />  // pass props to Strip component  // index is used to give unique key to each element in the array
         })}
