@@ -15,7 +15,7 @@ function Card({heading,heading2,width,para,button,hover,index}) {
           <h2 className="text-2xl lg:text-4xl mt-6">{heading2}</h2>
         </div>
         {button && (<div id="bottom">
-          <h3 className=" text-[12vw] mt-4 lg-mt-none lg:text-8xl  whitespace-nowrap font-semibold">
+          <h3 className=" text-[10vw] mt-4 lg-mt-none lg:text-8xl  whitespace-nowrap font-semibold">
             Start a Project
           </h3>
           <button className="px-5 py-2 border-2 border-zinc-200 mt-5 rounded-full">
