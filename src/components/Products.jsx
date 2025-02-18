@@ -64,7 +64,7 @@ function Products() {
           <Product key={index + 1} move={move} index={index} background={prod.background} name={prod.title} description={prod.description} live={prod.live} Case={prod.case} />
         ))}
         <div className='w-full h-full hidden lg:flex pointer-events-none absolute top-0'>
-          <motion.div initial={{ y: pos, x: "-50%" }} animate={{ y: pos + "vw" }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} id="window" className='h-[18vw] w-[30vw] absolute bg-blue-200 left-[45%] overflow-hidden'>
+          <motion.div initial={{ y: pos, x: "-50%" }} animate={{ y: pos + "vw" }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} id="window" className='h-[18vw] w-[30vw] absolute bg-blue-200 left-[40%] overflow-hidden'>
             <motion.div animate={{ y: -pos + "vw" }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} className='w-full h-full bg-red-200'>
               <video autoPlay muted loop src={arqitel}></video>
             </motion.div>
