@@ -3,8 +3,8 @@ import { LuMoveRight } from "react-icons/lu";
 
 function Card({heading,heading2,width,para,button,hover,index}) {
   return (
-    <div className={`w-full lg:${width}  min-h-[30vw] mb-5 lg:mb-none lg:max-h-[30vw] flex flex-col justify-evenly hover:bg-violet-600 ${index == true ? "bg-violet-600":"bg-zinc-800" }  lg:bg-zinc-800 rounded-xl p-5 lg:p-5`}>
-      <div className="w-full flex flex-col justify-between h-full">
+    <div className={`card w-full lg:${width}  min-h-[30vw] mb-5 lg:mb-none lg:max-h-[30vw] flex flex-col justify-evenly hover:bg-violet-600 ${index == true ? "bg-violet-600":"bg-zinc-800" }  lg:bg-zinc-800 rounded-xl p-5 lg:p-5`}>
+      <div className=" w-full flex flex-col justify-between h-full">
         <div id="top">
           <div className="w-full flex items-center justify-between">
             <h1 className="text-md opacity-75">{heading}</h1>

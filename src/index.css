@@ -4,3 +4,12 @@
     font-family: satoshi;
     src: url(./assets/fonts/66aa728085dec3390cb7f058_Satoshi-Variable.ttf);
 }
+.button:active{
+    scale: 0.8;
+}
+.navBtn:hover{
+    scale:1.1
+}
+.card:active{
+    scale: 0.95;
+}
